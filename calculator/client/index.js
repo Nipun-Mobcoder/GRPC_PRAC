@@ -1,6 +1,6 @@
 import grpc from "@grpc/grpc-js";
 import protoLoader from "@grpc/proto-loader";
-import { DATA, END } from '../constants/constants.js';
+import { DATA } from '../constants/constants.js';
 
 const packageDef = protoLoader.loadSync("../proto/calculator.proto", {});
 const grpcObject = grpc.loadPackageDefinition(packageDef);
